@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friday Live Coding</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="wrapper">
-            <a href="#" class="logo">Logo</a>
+        <div class="wrapper header__wrapper">
+            <a href="#" class="logo"><img src="./img/logo.png" alt="Productly logo"></a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Product</li>
+                    <li class="navigation__link">Home</li>
+                    <li class="navigation__link">Services</li>
+                    <li class="navigation__link">About</li>
+                    <li class="navigation__link">Product</li>
                 </ul>
             </nav>
             <div class="header__buttons">
@@ -31,7 +31,7 @@
     </header>
 
     <section class="promo">
-        <div class="wrapper">
+        <div class="wrapper promo__wrapper">
             <div class="promo__content">
                 <h1>The Design Thinking superpowers</h1>
                 <p>Tools, tutorials, design and innovation experts, all in one place! The most
@@ -43,6 +43,7 @@
                     </a>
                 </div>
             </div>
+            <img src="./img/promo/promo.png" alt="The Design Thinking">
         </div>
     </section>
 
@@ -150,33 +151,34 @@
                 online just as much as they do in the real world. If your visitors aren’t impressed,
                 you can expect them to leave without reading your awesome content or completing a
                 conversion action (e.g., signing up for your newsletter, making a purchase).</p>
+            <div class="layout-3-column">
+                <div class="employee block-shadowed">
+                    <employer__content>
+                        <h5>Kathy Rosenberg</h5>
+                        <p class="employee__title">Product Manager</p>
+                        <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
+                    </employer__content>
+                </div>
+                <div class="employee block-shadowed">
+                    <employer__content>
+                        <h5>Alexandra Boyarskaya</h5>
+                        <p class="employee__title">Support Marketing Specialist</p>
+                        <a href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
+                    </employer__content>
+                </div>
+                <div class="employee block-shadowed">
+                    <employer__content>
+                        <h5>Melani Amini</h5>
+                        <p class="employee__title">Photographer</p>
+                        <a href="mailto:melania@gmail.com">melania@gmail.com</a>
+                    </employer__content>
+                </div>
+            </div>
         </div>
-        <div class="layout-3-column">
-            <div class="employee block-shadowed">
-                <employer__content>
-                    <h5>Kathy Rosenberg</h5>
-                    <p class="employee__title">Product Manager</p>
-                    <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
-                </employer__content>
-            </div>
-            <div class="employee block-shadowed">
-                <employer__content>
-                    <h5>Alexandra Boyarskaya</h5>
-                    <p class="employee__title">Support Marketing Specialist</p>
-                    <a href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
-                </employer__content>
-            </div>
-            <div class="employee block-shadowed">
-                <employer__content>
-                    <h5>Melani Amini</h5>
-                    <p class="employee__title">Photographer</p>
-                    <a href="mailto:melania@gmail.com">melania@gmail.com</a>
-                </employer__content>
-            </div>
-        </div>
+
     </section>
 
-    <sectiion class="contact-us">
+    <section class="contact-us">
         <div class="wrapper">
             <h2>Contact Us</h2>
             <div class="layout-2-column">
@@ -211,7 +213,7 @@
                 </form>
             </div>
         </div>
-    </sectiion>
+    </section>
 
     <footer class="footer">
         <div class="wrapper">
