@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Lucille81/friday-live-coding/issues"
   },
-  "homepage": "https://github.com/Lucille81/friday-live-coding#readme"
+  "homepage": "https://github.com/Lucille81/friday-live-coding#readme",
+  "dependencies": {
+    "normalize-scss": "^8.0.0"
+  }
 }

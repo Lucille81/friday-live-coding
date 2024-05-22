@@ -1,0 +1,11 @@
+.logo-svg:hover {
+  cursor: pointer;
+  .logo-path {
+    fill: $color-primary;
+  }
+}
+
+.logo-path {
+  fill: $color-button;
+  @extend %transition;
+}

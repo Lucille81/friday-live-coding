@@ -1,13 +1,13 @@
 .button {
   padding: 11px 25px 13px;
-  font-family: 'Open Sans', Verdana, sans-serif;
+  @extend %font-primary;
   font-style: normal;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.2rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s;
+  @extend %transition;
 
   &_bordered {
     color: $color-button;
@@ -15,7 +15,7 @@
     border: 1px solid $color-border;
     &:hover {
       background-color: $color-hovered;
-      border: none;
+      border: 1px solid $color-hovered;
     }
   }
 
@@ -27,4 +27,13 @@
       background-color: $color-additional;
     }
   }
+}
+
+.link-button {
+  color: $color-primary;
+  @extend %font-add;
+  @include font(1.6rem, 2.4rem, 600);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
 }
