@@ -1,10 +1,55 @@
 .contact-us {
   background-color: $color-background;
   padding: 62px 0 82px;
+  @include media-tablet {
+    padding: 50px 0;
+    text-align: center;
+  }
+  @include media-mobile {
+    padding: 34px 0 49px;
+  }
+}
+
+.contact-us-container {
+  @include media-tablet {
+    flex-direction: column;
+    gap: 35px;
+  }
 }
 
 .contact-us__title {
   margin: 0 0 16px;
+}
+
+.contact-us__text {
+  margin: 1px 0 33px;
+  max-width: 513px;
+  @include media-tablet {
+    max-width: 100%;
+  }
+}
+
+.contact-us__link {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 0 19px;
+  @include media-mobile {
+    gap: 7px;
+  }
+
+  > a {
+    @include font(2.5rem, 2.6rem, 400);
+    color: $color-text;
+    text-decoration: none;
+    @include media-mobile {
+      @include font(2rem, 2.6rem, 400);
+    }
+  }
+
+  @include media-tablet {
+    justify-content: center;
+  }
 }
 
 .contact-us__form {
@@ -28,10 +73,19 @@
 
 .contact-us__line {
   margin-bottom: 19px;
+  @include media-mobile {
+    margin-bottom: 16px;
+    gap: 16px;
+    > input {
+      flex-basis: 100%;
+    }
+  }
 }
 
 .contact-us__button {
   > button {
     min-width: 117px;
+    padding-top: 15px;
+    padding-bottom: 16px;
   }
 }

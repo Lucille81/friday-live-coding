@@ -1,10 +1,7 @@
 .button {
   padding: 11px 25px 13px;
   @extend %font-primary;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+  @include font(1.6rem, 2.2rem, 600);
   border-radius: 4px;
   cursor: pointer;
   @extend %transition;

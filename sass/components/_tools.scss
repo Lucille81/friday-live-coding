@@ -1,6 +1,12 @@
 .tools__wrapper {
   background: url('./img/backgrounds/tools-bg.png') no-repeat bottom center/100%;
   padding-bottom: 90px;
+  @include media-tablet {
+    padding-bottom: 53px;
+  }
+  @include media-mobile {
+    padding-bottom: 47px;
+  }
 }
 
 .tools__title {
@@ -8,13 +14,57 @@
   margin: auto;
   text-align: center;
   margin-bottom: 70px;
+  @include media-tablet {
+    margin-bottom: 51px;
+  }
+  @include media-mobile {
+    margin-bottom: 43px;
+  }
 }
 
 .tools__button {
   margin-top: 60px;
   text-align: center;
+  @include media-tablet {
+    margin-top: 54px;
+  }
+  @include media-mobile {
+    margin-top: 38px;
+  }
+}
+
+.tool-container {
+  @include media-tablet {
+    justify-content: space-around;
+    row-gap: 54px;
+    .tool {
+      flex-basis: 36%;
+    }
+  }
+  @include media-mobile {
+    row-gap: 47px;
+    .tool {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.tool {
+  @include media-tablet {
+    text-align: center;
+  }
 }
 
 .tool__title {
   margin: 30px 0 16px;
+  @include media-tablet {
+    margin: 20px 0 6px;
+  }
+  @include media-mobile {
+    margin: 8px 0 0;
+  }
+}
+
+.tool__text {
+  margin: 0;
 }

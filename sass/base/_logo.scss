@@ -1,3 +1,16 @@
+.logo {
+  display: flex;
+}
+
+.logo-object {
+  width: 191px;
+  height: 32px;
+  @include media-mobile {
+    width: 160px;
+    height: 27px;
+  }
+}
+
 .logo-svg:hover {
   cursor: pointer;
   .logo-path {

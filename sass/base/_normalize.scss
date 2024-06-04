@@ -350,6 +350,11 @@ template {
   display: none;
 }
 
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
 * {
   box-sizing: border-box;
 }

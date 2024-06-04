@@ -7,6 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    padding-left: 24px;
+  }
+}
+
+.header__logo-line {
+  display: flex;
 }
 
 .header__buttons {
@@ -15,5 +22,15 @@
     &:first-child {
       margin-left: 0;
     }
+  }
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.header__navigation {
+  @include media-tablet {
+    display: none;
   }
 }

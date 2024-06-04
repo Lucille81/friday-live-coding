@@ -31,6 +31,18 @@
     width: 15px;
     height: 17px;
   }
+
+  &_phone {
+    background-image: url('./img/icons/phone.svg');
+    width: 7px;
+    height: 11px;
+  }
+
+  &_letter {
+    background-image: url('./img/icons/letter.svg');
+    width: 11px;
+    height: 8px;
+  }
 }
 
 .icon-square {
@@ -56,5 +68,22 @@
 
   &_blue {
     background-color: $color-blue;
+  }
+}
+
+.icon-round {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  @include media-mobile {
+    width: 19px;
+    height: 19px;
+  }
+
+  &_white {
+    background-color: $color-light;
   }
 }
