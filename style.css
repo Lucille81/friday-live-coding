@@ -699,7 +699,7 @@ h5 {
   justify-content: space-between;
 }
 .layout-3-column > * {
-  flex-basis: 30%;
+  flex-basis: 31.5%;
 }
 
 .layout-2-column {
@@ -1155,6 +1155,7 @@ h5 {
   .about-us {
     padding: 50px 0;
     text-align: center;
+    overflow: hidden;
   }
 }
 @media (max-width: 414px) {
@@ -1188,6 +1189,16 @@ h5 {
 
 .employee-container {
   padding-right: 32px;
+}
+.employee-container > * {
+  flex-basis: 29.6%;
+}
+@media (max-width: 768px) {
+  .employee-container {
+    width: 1197px;
+    text-align: left;
+    transform: translateX(-410px);
+  }
 }
 
 .employee {
@@ -1234,6 +1245,33 @@ h5 {
   top: 20px;
   right: -32px;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-us-dots {
+  display: none;
+}
+@media (max-width: 768px) {
+  .about-us-dots {
+    padding-top: 33px;
+    display: flex;
+    gap: 5.54px;
+    justify-content: center;
+  }
+}
+@media (max-width: 414px) {
+  .about-us-dots {
+    padding-top: 27px;
+  }
+}
+
+.about-us-dot {
+  width: 8px;
+  height: 8px;
+  border: #2f281e 1px solid;
+  border-radius: 50%;
+}
+.about-us-dot_active {
+  background-color: #2f281e;
 }
 
 /*# sourceMappingURL=style.css.map */

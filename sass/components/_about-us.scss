@@ -5,6 +5,7 @@ $image-gap: 32px;
   @include media-tablet {
     padding: 50px 0;
     text-align: center;
+    overflow: hidden;
   }
   @include media-mobile {
     padding: 40px 0;
@@ -30,6 +31,14 @@ $image-gap: 32px;
 
 .employee-container {
   padding-right: $image-gap;
+  > * {
+    flex-basis: 29.6%;
+  }
+  @include media-tablet {
+    width: 1197px;
+    text-align: left;
+    transform: translateX(-410px);
+  }
 }
 
 .employee {
@@ -70,4 +79,27 @@ $image-gap: 32px;
   top: 20px;
   right: -$image-gap;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-us-dots {
+  display: none;
+  @include media-tablet {
+    padding-top: 33px;
+    display: flex;
+    gap: 5.54px;
+    justify-content: center;
+  }
+  @include media-mobile {
+    padding-top: 27px;
+  }
+}
+
+.about-us-dot {
+  width: 8px;
+  height: 8px;
+  border: $color-heading 1px solid;
+  border-radius: 50%;
+  &_active {
+    background-color: $color-heading;
+  }
 }
