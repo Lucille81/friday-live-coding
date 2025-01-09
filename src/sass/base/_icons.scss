@@ -3,43 +3,43 @@
   display: inline-block;
 
   &_play {
-    background-image: url('./img/icons/play.svg');
+    background-image: url('../img/icons/play.svg');
     width: 18px;
     height: 19px;
   }
 
   &_arrow {
-    background-image: url('./img/icons/arrow.svg');
+    background-image: url('../img/icons/arrow.svg');
     width: 12px;
     height: 17px;
   }
 
   &_snake {
-    background-image: url('./img/icons/snake.svg');
+    background-image: url('../img/icons/snake.svg');
     width: 18px;
     height: 14px;
   }
 
   &_heart {
-    background-image: url('./img/icons/heart.svg');
+    background-image: url('../img/icons/heart.svg');
     width: 17px;
     height: 15px;
   }
 
   &_watch {
-    background-image: url('./img/icons/watch.svg');
+    background-image: url('../img/icons/watch.svg');
     width: 15px;
     height: 17px;
   }
 
   &_phone {
-    background-image: url('./img/icons/phone.svg');
+    background-image: url('../img/icons/phone.svg');
     width: 7px;
     height: 11px;
   }
 
   &_letter {
-    background-image: url('./img/icons/letter.svg');
+    background-image: url('../img/icons/letter.svg');
     width: 11px;
     height: 8px;
   }
@@ -54,7 +54,7 @@
   border-radius: 19px;
 
   &_purple {
-    // background: url('./img/icons/arrow.svg') no-repeat center;
+    // background: url('../img/icons/arrow.svg') no-repeat center;
     background-color: $color-purple;
   }
 
