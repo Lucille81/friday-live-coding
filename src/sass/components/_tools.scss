@@ -1,5 +1,6 @@
 .tools__wrapper {
-  background: url('./img/backgrounds/tools-bg.png') no-repeat bottom center/100%;
+  background: url('../img/backgrounds/tools-bg.png') no-repeat bottom
+    center/100%;
   padding-bottom: 90px;
   @include media-tablet {
     padding-bottom: 53px;
