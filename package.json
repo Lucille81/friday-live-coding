@@ -2,7 +2,7 @@
   "name": "friday-live-coding",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "style": "sass --watch src/sass/style.scss src/sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,9 @@
   "homepage": "https://github.com/Lucille81/friday-live-coding#readme",
   "dependencies": {
     "normalize-scss": "^8.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   }
 }
